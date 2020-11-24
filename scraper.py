@@ -24,11 +24,11 @@ async def memberstat(ctx):
                 shutil.copyfileobj(response.raw, out_file)
             del response
             f = open("usernames.txt", "a")
-            f.write(member.name)
+            f.write(f"{member.name} \n")
             f.close()
         except:
             if member != ctx.author:
-                error = "lol"
+                pass
 
 
 
